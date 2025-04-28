@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/app.js"></script>
+    <title>Виртуальный музей военной техники</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Виртуальный музей военной техники</h1>
+      <p class="subtitle">22 июня 1941 – 7 мая 1945 гг.</p>
+      <img class="hero" src="/img/hero.png" alt="" />
+    </header>
+    <main>
+      <nav class="navigation" id="navigation">
+        <button class="tab-button active" data-tab="first-tab">
+          СОВЕТСКАЯ БРОНЕТЕХНИКА И ТАНКИ
+        </button>
+        <button class="tab-button" data-tab="second-tab">
+          АРТИЛЛЕРИЯ И РСЗО
+        </button>
+        <button class="tab-button" data-tab="third-tab">АВИАЦИЯ</button>
+        <button class="tab-button" data-tab="fourth-tab">
+          АВТОМОБИЛИ И ИНЖЕНЕРНАЯ ТЕХНИКА
+        </button>
+        <button class="tab-button" data-tab="fifth-tab">
+          НЕМЕЦКАЯ ТЕХНИКА (ТРОФЕИ)
+        </button>
+        <button class="tab-button" data-tab="sixth-tab">
+          СТРЕЛКОВОЕ ОРУЖИЕ И ВООРУЖЕНИЕ ПЕХОТЫ
+        </button>
+        <button class="tab-button" data-tab="seveth-tab">ФЛОТ</button>
+      </nav>
+      <label class="search-wrapper">
+        <input type="search" placeholder="Поиск по технике" />
+        <img src="/img/magnifier.svg" alt="magnifier" />
+      </label>
+      <div id="first-tab" class="tab show">
+        <div class="card">
+          <h2 class="name">T-34-76/85</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/T-34.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">КВ-1</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/KV-1.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">ИС-2</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/IS-2.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">СУ-100</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/SU-100.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">СУ-76</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/SU-76.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">БА-64</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/BA-64.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="second-tab" class="tab">
+        <div class="card">
+          <h2 class="name">Катюша (БМ-13)</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/katuysha.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">122-мм гаубица М-30</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/M-30.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="third-tab" class="tab">
+        <div class="card">
+          <h2 class="name">Ил-2</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/IL-2.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">Ла-5/7</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/LA5-7.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="fourth-tab" class="tab">
+        <div class="card">
+          <h2 class="name">ГАЗ-М1</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/GAZ-M1.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">Амфибия ГАЗ-46</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/GAZ-46.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="fifth-tab" class="tab">
+        <div class="card">
+          <h2 class="name">“Пантера”</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/Pantera.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">“Тигр”</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/Tiger.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="sixth-tab" class="tab">
+        <div class="card">
+          <h2 class="name">ППШ-41</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/PPSH.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">ДП-27</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/DP.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+      <div id="seveth-tab" class="tab">
+        <div class="card">
+          <h2 class="name">Торпедные катера Г-5</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/G-5.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+        <div class="card">
+          <h2 class="name">Катера типа МО</h2>
+          <span class="shine"></span>
+          <img class="vehicle" src="/img/vehicle/MO.png" alt="" />
+          <button class="read-more">Читать</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
