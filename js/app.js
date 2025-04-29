@@ -83,12 +83,12 @@ function goToCardM30() {
 }
 function goToCardGASM1() {
   window.location.href =
-    "automobiles-and-engineering-technology/card_GAS-M1.html";
+    "automobiles-and-engineering-technology/card_GAZ-M1.html";
 }
 
 function goToCardGAS46() {
   window.location.href =
-    "automobiles-and-engineering technology/card_GAS-46.html";
+    "automobiles-and-engineering-technology/card_GAZ-46.html";
 }
 
 function goToCardPantera() {
