@@ -7,21 +7,49 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" rel="stylesheet" href="/css/card.css" />
+    <link rel="stylesheet" href="/css/card.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Стили для модального окна */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header class="vehicle-header">
       <div class="vehicle-content">
         <div class="vehicle-image-container">
-          <img
-            class="vehicle-image"
-            src="../img/vehicle/KV-1.png"
-            alt="T-34-76"
-          />
+          <img class="vehicle-image" src="../img/vehicle/KV-1.png" alt="КВ-1" />
           <div class="shine-effect"></div>
         </div>
         <div class="vehicle-text-content">
@@ -33,10 +61,67 @@
             <p><span>Скорость:</span> 35 км/ч</p>
             <p><span>Вооружение:</span> 76-мм пушка, 3–4 × 7.62-мм пулемёта</p>
           </div>
-          <button class="view-model-btn">Посмотреть 3D модель</button>
+          <button class="view-model-btn" onclick="openModal()">
+            Посмотреть 3D модель
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Модальное окно с 3D моделью -->
+    <div id="modelModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="sketchfab-embed-wrapper">
+          <iframe
+            title="RUSSIAN TANK KV1 (1942)"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/e4b6179023dd45f493af22085203c1c9/embed"
+            style="width: 100%; height: 100%"
+          ></iframe>
+          <p
+            style="
+              font-size: 13px;
+              font-weight: normal;
+              margin: 5px;
+              color: #4a4a4a;
+            "
+          >
+            <a
+              href="https://sketchfab.com/3d-models/russian-tank-kv1-1942-e4b6179023dd45f493af22085203c1c9?utm_medium=embed&utm_campaign=share-popup&utm_content=e4b6179023dd45f493af22085203c1c9"
+              target="_blank"
+              rel="nofollow"
+              style="font-weight: bold; color: #1caad9"
+              >RUSSIAN TANK KV1 (1942)</a
+            >
+            by
+            <a
+              href="https://sketchfab.com/TSB3DMODELS?utm_medium=embed&utm_campaign=share-popup&utm_content=e4b6179023dd45f493af22085203c1c9"
+              target="_blank"
+              rel="nofollow"
+              style="font-weight: bold; color: #1caad9"
+              >TSB3DMODELS</a
+            >
+            on
+            <a
+              href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=e4b6179023dd45f493af22085203c1c9"
+              target="_blank"
+              rel="nofollow"
+              style="font-weight: bold; color: #1caad9"
+              >Sketchfab</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="fact-card">
       <p>
@@ -71,6 +156,26 @@
 
       <p class="quote">Один КВ-1 стоит целого взвода лёгких танков!</p>
     </div>
+
+    <script>
+      // Функции для управления модальным окном
+      function openModal() {
+        document.getElementById("modelModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("modelModal").style.display = "none";
+      }
+
+      // Закрытие модального окна при клике вне его
+      window.onclick = function (event) {
+        const modal = document.getElementById("modelModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
