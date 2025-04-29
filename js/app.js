@@ -102,7 +102,7 @@ function goToCardTiger() {
 }
 
 function goToCardPPSH41() {
-  window.location.href = "infantry/card_PPSH-41.html";
+  window.location.href = "infantry/card_PPHS-41.html";
 }
 
 function goToCardDP27() {
