@@ -74,42 +74,46 @@ function goToCardIL2() {
   window.location.href = "aviation/card_LA5-7.html";
 }
 
-function goToCardKatusha(){
-  window.location.href= 'artillery/card_katuysha.html'
+function goToCardKatusha() {
+  window.location.href = "artillery/card_katuysha.html";
 }
 
-function goToCardM30(){
-  window.location.href='artillery/card_M30.html'
+function goToCardM30() {
+  window.location.href = "artillery/card_M30.html";
 }
 
-function goToCardGASM1(){
-  window.location.href='automobiles and engineering technology/card_GAS-M1.html'
+function goToCardGASM1() {
+  window.location.href =
+    "automobiles-and-engineering-technology/card_GAS-M1.html";
 }
 
-function goToCardGAS46(){
-  window.location.href='automobiles and engineering technology/card_GAS-46.html'
+function goToCardGAS46() {
+  window.location.href =
+    "automobiles-and-engineering-technology/card_GAS-46.html";
 }
 
-function goToCardPantera(){
-  window.location.href='cars and engineering technic German machinery (trophies)/card_PANTERA.html'
+function goToCardPantera() {
+  window.location.href =
+    "cars-and-engineering-technic-German-machinery-(trophies)/card_PANTERA.html";
 }
 
-function goToCardTiger(){
-  window.location.href='cars and engineering technic German machinery (trophies)/card_TIGER.html'
+function goToCardTiger() {
+  window.location.href =
+    "cars-and-engineering-technic-German-machinery-(trophies)/card_TIGER.html";
 }
 
-function goToCardPPSH41(){
-  window.location.href='infantry/card_PPSH-41.html'
+function goToCardPPSH41() {
+  window.location.href = "infantry/card_PPSH-41.html";
 }
 
-function goToCardDP27(){
-  window.location.href='infantry/card_DP-27.html'
+function goToCardDP27() {
+  window.location.href = "infantry/card_DP-27.html";
 }
 
-function goToCardG5(){
-  window.location.href='the fleet/card_G-5.html'
+function goToCardG5() {
+  window.location.href = "the-fleet/card_G-5.html";
 }
 
-function goToCardMO(){
-  window.location.href='the fleet/card_MO.html'
+function goToCardMO() {
+  window.location.href = "the-fleet/card_MO.html";
 }
