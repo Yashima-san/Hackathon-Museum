@@ -83,19 +83,19 @@ function goToCardM30(){
 }
 
 function goToCardGASM1(){
-  window.location.href='automobiles and engineering technology/card_GAS-M1.html'
+  window.location.href='automobiles-and-engineering-technology/card_GAS-M1.html'
 }
 
 function goToCardGAS46(){
-  window.location.href='automobiles and engineering technology/card_GAS-46.html'
+  window.location.href='automobiles-and-engineering technology/card_GAS-46.html'
 }
 
 function goToCardPantera(){
-  window.location.href='cars and engineering technic German machinery (trophies)/card_PANTERA.html'
+  window.location.href='cars-and-engineering-technic-German-machinery-(trophies)/card_PANTERA.html'
 }
 
 function goToCardTiger(){
-  window.location.href='cars and engineering technic German machinery (trophies)/card_TIGER.html'
+  window.location.href='cars-and-engineering-technic-German-machinery-(trophies)/card_TIGER.html'
 }
 
 function goToCardPPSH41(){
@@ -107,9 +107,9 @@ function goToCardDP27(){
 }
 
 function goToCardG5(){
-  window.location.href='the fleet/card_G-5.html'
+  window.location.href='the-fleet/card_G-5.html'
 }
 
 function goToCardMO(){
-  window.location.href='the fleet/card_MO.html'
+  window.location.href='the-fleet/card_MO.html'
 }
