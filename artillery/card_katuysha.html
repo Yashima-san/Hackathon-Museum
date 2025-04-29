@@ -12,6 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Стили для модального окна */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header class="vehicle-header">
@@ -35,10 +67,18 @@
               <span>Боекомплект:</span> 16 реактивных снарядов М-13 (132 мм)
             </p>
           </div>
-          <button class="view-model-btn">Посмотреть 3D модель</button>
+          <button class="view-model-btn" onclick="openModal()">Посмотреть 3D модель</button>
         </div>
       </div>
     </header>
+
+    <!-- Модальное окно с 3D моделью -->
+    <div id="modelModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="sketchfab-embed-wrapper"> <iframe title="Studebaker BM-13 Katyusha" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/53ed78a6b739404ebffdaddc621cc6df/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/studebaker-bm-13-katyusha-53ed78a6b739404ebffdaddc621cc6df?utm_medium=embed&utm_campaign=share-popup&utm_content=53ed78a6b739404ebffdaddc621cc6df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Studebaker BM-13 Katyusha </a> by <a href="https://sketchfab.com/TedwinK.66?utm_medium=embed&utm_campaign=share-popup&utm_content=53ed78a6b739404ebffdaddc621cc6df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> TedwinK.66 </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=53ed78a6b739404ebffdaddc621cc6df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+      </div>
+    </div>
 
     <div class="fact-card">
       <p>
@@ -66,6 +106,26 @@
         "Сначала страшный вой, потом всё вокруг горит – бежать некуда. Это не война, это апокалипсис!"
       </p>
     </div>
+
+
+    <script>
+      // Функции для управления модальным окном
+      function openModal() {
+        document.getElementById("modelModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("modelModal").style.display = "none";
+      }
+
+      // Закрытие модального окна при клике вне его
+      window.onclick = function (event) {
+        const modal = document.getElementById("modelModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
