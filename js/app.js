@@ -42,26 +42,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function goToCardT34(){
-  window.location.href = 'tanks/card_t34.html'
-};
+function goToCardT34() {
+  window.location.href = "tanks/card_t34.html";
+}
 
-function goToCardIS2(){
-  window.location.href = 'tanks/card_is2.html'
-};
+function goToCardIS2() {
+  window.location.href = "tanks/card_is2.html";
+}
 
-function goToCardKV1(){
-  window.location.href = 'tanks/card_kv1.html'
-};
+function goToCardKV1() {
+  window.location.href = "tanks/card_kv1.html";
+}
 
-function goToCardBA64(){
-  window.location.href = 'tanks/card_ba64.html'
-};
+function goToCardBA64() {
+  window.location.href = "tanks/card_ba64.html";
+}
 
-function goToCardSU100(){
-  window.location.href = 'tanks/card_su100.html'
-};
+function goToCardSU100() {
+  window.location.href = "tanks/card_su100.html";
+}
 
-function goToCardSU76(){
-  window.location.href = 'tanks/card_su76.html'
-};
+function goToCardSU76() {
+  window.location.href = "tanks/card_su76.html";
+}
+
+function goToCardLA57() {
+  window.location.href = "aviation/card_LA5-7.html";
+}
+
+function goToCardIL2() {
+  window.location.href = "aviation/card_LA5-7.html";
+}
