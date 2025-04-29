@@ -10,6 +10,7 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--main-text);
+  font-family: "Podkova", serif;
 }
 
 header {
@@ -142,8 +143,9 @@ main {
   flex-direction: column;
   overflow: hidden;
 }
+
 .card > .name {
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
   color: var(--accent-text);
   margin: 0;
@@ -180,4 +182,23 @@ main {
   background-color: transparent;
   width: fit-content;
   cursor: pointer;
+}
+
+.shine {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .shine {
+  opacity: 0.7;
+  animation: shineRotate 8s linear infinite;
+}
+
+@keyframes shineRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
