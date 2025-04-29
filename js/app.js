@@ -71,5 +71,5 @@ function goToCardLA57() {
 }
 
 function goToCardIL2() {
-  window.location.href = "aviation/card_LA5-7.html";
+  window.location.href = "aviation/card_IL-2.html";
 }
