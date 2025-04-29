@@ -1,36 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <title>БА-64</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" rel="stylesheet" href="/css/card.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="info-top">
-        <h1>БА-64</h1>  
-        <p>"Народный истребитель танков"  </p>
-        <img src="../img/vehicle/BA-64.png" alt="БА-64">
-        <p><span>Тип:</span> Лёгкий бронеавтомобиль</p>
-        <p><span>Годы производства:</span> 1942–1946</p>
-        <p><span>Скорость:</span> 80 км/ч (по шоссе)</p>
-        <p><span>Вооружение:</span> 7,62-мм пулемёт ДТ (на ранних моделях)  
-           12,7-мм пулемёт ДШК (на модификации БА-64Б)</p>
-        <button>Посмотреть 3D модель</button>
-    </div>
-    <div class="3d-vodel"></div>
-    <div class="info-bottom">
-        <p><span>Интересный факт:</span>Единственный советский серийный бронеавтомобиль, созданный во время войны. Солдаты ласково называли его «Бэха» или «Бабка».</p>
-        <p><span>Шоковый эффект:</span> «Невидимка»  
-          В 1943 году под Харьковом разведгруппа на двух БА-64 обнаружила немецкую колонну из 15 грузовиков и 3 бронемашин. Уклонившись от погони, они привели артиллеристов, которые разгромили врага. Немцы так и не поняли, откуда появились советские корректировщики.  
-        </p>
-        <p><span>Боевые легенды:</span> В Белоруссии 1944 года экипаж БА-64 заманил немецкий разведотряд в засаду, где их уничтожили пехотинцы  
-           Под Берлином «Бэхи» использовались как быстрые курьеры между штабами под огнём  
-           После войны БА-64 участвовал в Корейской войне, где северокорейцы ценили его за бесшумность в ночных рейдах  </p>
-        <p>«Наш БА-64 был как хороший конь – быстрый, послушный и никогда не подводил»</p>
+    <header class="vehicle-header">
+      <div class="vehicle-content">
+        <div class="vehicle-image-container">
+          <img
+            class="vehicle-image"
+            src="../img/vehicle/BA-64.png"
+            alt="T-34-76"
+          />
+          <div class="shine-effect"></div>
+        </div>
+        <div class="vehicle-text-content">
+          <h1 class="vehicle-title">БА-64</h1>
+          <p class="vehicle-subtitle">Глаза и уши армии</p>
+          <div class="vehicle-specs">
+            <p><span>Тип:</span> Лёгкий бронеавтомобиль</p>
+            <p><span>Годы производства:</span> 1942–1946</p>
+            <p><span>Скорость:</span> 80 км/ч (по шоссе)</p>
+            <p>
+              <span>Вооружение:</span> - 7,62-мм пулемёт ДТ (на ранних моделях)
+              - 12,7-мм пулемёт ДШК (на модификации БА-64Б)
+            </p>
+            <p><span>Экипаж:</span> 2 человека</p>
+          </div>
+          <button class="view-model-btn">Посмотреть 3D модель</button>
+        </div>
       </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </header>
+
+    <div class="fact-card">
+      <p>
+        <span>Интересный факт:</span> Единственный советский серийный
+        бронеавтомобиль, созданный во время войны. Солдаты ласково называли его
+        «Бэха» или «Бабка».
+      </p>
+    </div>
+
+    <div class="additional-info">
+      <p>
+        <span>Шоковый эффект: </span>«Невидимка» В 1943 году под Харьковом
+        разведгруппа на двух БА-64 обнаружила немецкую колонну из 15 грузовиков
+        и 3 бронемашин. Уклонившись от погони, они привели артиллеристов,
+        которые разгромили врага. Немцы так и не поняли, откуда появились
+        советские корректировщики.
+      </p>
+
+      <p>
+        <span>Боевые легенды: </span> В Белоруссии 1944 года экипаж БА-64
+        заманил немецкий разведотряд в засаду, где их уничтожили пехотинцы Под
+        Берлином «Бэхи» использовались как быстрые курьеры между штабами под
+        огнём После войны БА-64 участвовал в Корейской войне, где северокорейцы
+        ценили его за бесшумность в ночных рейдах
+      </p>
+
+      <p class="quote">
+        Наш БА-64 был как хороший конь – быстрый, послушный и никогда не
+        подводил
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

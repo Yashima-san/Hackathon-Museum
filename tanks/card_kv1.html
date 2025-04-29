@@ -1,34 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <title>КВ-1</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" rel="stylesheet" href="/css/card.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="info-top">
-        <h1>КВ-1</h1>  
-        <p>Советский богатырь!</p>
-        <img src="../img/vehicle/KV-1.png" alt="КВ-1">
-        <p><span>Тип:</span> Тяжёлый танк</p>
-        <p><span>Годы производства:</span> 1939–1943</p>
-        <p><span>Скорость:</span> 35 км/ч</p>
-        <p><span>Вооружение:</span> 76-мм пушка, 3–4 × 7.62-мм пулемёта</p>
-        <button>Посмотреть 3D модель</button>
-    </div>
-    <div class="3d-vodel"></div>
-    <div class="info-bottom">
-        <p><span>Интересный факт:</span> Один из самых защищённых танков начала войны. Немцы прозвали его *"Призраком"* – их снаряды часто не пробивали броню КВ-1.</p>
-        <p><span>Неожиданный эффект:</span> В июне 1941 года под Расейняем (Литва) один КВ-1 двое суток сдерживал целую немецкую дивизию! Немцы бросали против него артиллерию, танки и даже вызвали пикировщики, но танк продолжал бой. В итоге его подбили с близкого расстояния, но задержка позволила советским войскам перегруппироваться. 
-        </p>
-        <p><span>"Непробиваемый" исполин:</span> Броня КВ-1 (75–100 мм) была *неуязвима* для большинства немецких пушек 1941 года.  
-          Известен случай, когда КВ-1 получил 156 попаданий, но остался в строю!  
-          Экипажи называли его *"крепостью на гусеницах"* – даже подбитый, он часто становился долговременной огневой точкой.  </p>
-        <p>"Один КВ-1 стоит целого взвода лёгких танков!"</p>
+    <header class="vehicle-header">
+      <div class="vehicle-content">
+        <div class="vehicle-image-container">
+          <img
+            class="vehicle-image"
+            src="../img/vehicle/KV-1.png"
+            alt="T-34-76"
+          />
+          <div class="shine-effect"></div>
         </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <div class="vehicle-text-content">
+          <h1 class="vehicle-title">КВ-1</h1>
+          <p class="vehicle-subtitle">Советский богатырь</p>
+          <div class="vehicle-specs">
+            <p><span>Тип:</span> Тяжёлый танк</p>
+            <p><span>Годы производства:</span> 1939–1943</p>
+            <p><span>Скорость:</span> 35 км/ч</p>
+            <p><span>Вооружение:</span> 76-мм пушка, 3–4 × 7.62-мм пулемёта</p>
+          </div>
+          <button class="view-model-btn">Посмотреть 3D модель</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="fact-card">
+      <p>
+        <span>Интересный факт:</span> Один из самых защищённых танков начала
+        войны. Немцы прозвали его "Призраком" – их снаряды часто не пробивали
+        броню КВ-1.
+      </p>
+    </div>
+
+    <div class="additional-info">
+      <p>
+        <span>Неожиданный эффект:</span> В июне 1941 года под Расейняем (Литва)
+        один КВ-1 двое суток сдерживал целую немецкую дивизию! Немцы бросали
+        против него артиллерию, танки и даже вызвали пикировщики, но танк
+        продолжал бой. В итоге его подбили с близкого расстояния, но задержка
+        позволила советским войскам перегруппироваться.
+      </p>
+
+      <p>
+        <span>"Непробиваемый" исполин:</span> Броня КВ-1 (75–100 мм) была
+        неуязвима для большинства немецких пушек 1941 года. Известен случай,
+        когда КВ-1 получил 156 попаданий, но остался в строю! Экипажи называли
+        его "крепостью на гусеницах" – даже подбитый, он часто становился
+        долговременной огневой точкой.
+      </p>
+
+      <p>
+        <span>Цена мощи:</span> КВ-1 был слишком тяжёлым для многих мостов и
+        дорог, а его трансмиссия часто ломалась. Но его легендарная живучесть
+        внушала ужас врагам и вселяла уверенность в наших бойцов!
+      </p>
+
+      <p class="quote">Один КВ-1 стоит целого взвода лёгких танков!</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
